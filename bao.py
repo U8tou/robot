@@ -12,3 +12,4 @@ username = Hellow.ask()
 
 robor_name = "U8机器人"
 Hellow.hellow(username,robor_name)
+print("This is my test")
