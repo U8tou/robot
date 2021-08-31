@@ -1,4 +1,4 @@
-import src.ExeclUtils as ExeclUtil
+import ExeclUtils as Ex
 
 
 def _log():
@@ -32,7 +32,7 @@ def auth():
     while au:
         if i == 3:
             au = False
-        print('请输入密码' + i.__str__())
+        print('请输入密码')
         pwd = input()
         if pwd == password:
             au = False
@@ -47,9 +47,30 @@ if __name__ == '__main__':
     au = auth()
     if au == 'yes':
         while True:
-            ExeclUtil.info()
+            Ex.info()
             print('输入任意值继续...(输入exit将结束程序)')
             _exit = input()
             if _exit == 'exit':
                 break
 
+# 功能测试
+# if __name__ == "__main__":
+#     _log()
+#     print('欢迎进入系统！')
+#     print('柱状图: a')
+#     print('饼状图: b')
+#     print('折线图: c')
+#     print('散点图: d')
+#     print('请选择功能，输入序号并回车确认')
+#     code = input()
+#     print('请输入文件路径（全称）')
+#     # path = 'D:/MyProject/PythonProject/robot/static/111.xlsx'
+#     fpath = input()
+#     if code == 'a':
+#         byBar(fpath)
+#     if code == 'c':
+#         byPie(fpath)
+#     if code == 'b':
+#         byArea(fpath)
+#     if code == 'd':
+#         byScatter(fpath)
