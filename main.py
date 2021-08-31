@@ -25,7 +25,7 @@ def _log():
 
 
 def auth():
-    password = '12345667'
+    password = '1234567'
     i = 1
     au = True
     print("注意：密码输错3次将自动退出程序！")
